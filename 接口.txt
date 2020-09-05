@@ -1,0 +1,44 @@
+/addUser(User user) 添加用户 √
+/login(User user) 手自动登录 √
+/addGroup(Group group) 创建部门 √
+/invite(User user) 邀请加入 √
+/exitGroup(User user) 自己退群 √
+/colleagueList(User user) 返回部门同事列表 √
+/addNews(News news) 添加新闻 √
+/readNews(News news) 阅读新闻 √
+/newsList(Pagination pagination) 返回新闻列表 √ type=20
+/newsList(Pagination pagination) 返回部门新闻列表 √ type=21
+/newsList(Pagination pagination) 返回我发布的新闻列表 √ type=22
+/newsList(Pagination pagination) 返回热门列表 √ type=23
+
+/addReport(Notice notice) 举报新闻 √
+/addProcess(Notice srcNotice) 管理员删除新闻并通知双方 √
+
+/noticeList(Pagination pagination)获取消息通知 √ (包括了用户和管理员)
+
+/readNotice(Notice notice) 阅读消息 √
+
+/groupList(Pagination pagination) 管理员展示部门列表 √
+
+/addMember(User user) 管理员添加部门成员，userid为管理员id，groupId为目标部门，userPhone为成员电话 √
+
+
+/searchList (Pagination pagination) 搜索新闻 √
+
+/noticeUnreadTotal (User user) 未读消息数量 √
+
+/getUser(Long userId)
+/getGroup(Long groupId)
+/getNews(Long newsId)
+
+
+/addComment(Comment comment) 添加点赞、评论
+/cancelLike(Comment comment) 取消点赞
+/deleteSecondComment(Comment comment) 删除二级评论
+/deleteFirstComment(Comment comment) 删除一级评论
+/getNewsLikeCount(News news) 获取一级点赞数
+/getFirstCommentList(News news) 获取一级评论列表
+/getSecondLikeCount(Comment comment) 获取二级点赞数
+/getSecondCommentCount(Comment comment) 获取二级评论数
+/getSecondCommentList(Comment comment) 获取二级评论列表
+
