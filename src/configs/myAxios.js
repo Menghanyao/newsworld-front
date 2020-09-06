@@ -37,6 +37,12 @@ async function getData(url = '', data = {}, type = 'POST', method = 'JSON') {
  */
 export const addUser = user => getData('/addUser', user);
 
+
+/**
+ * 普通用户注册
+ */
+export const addAdmin = user => getData('/addAdmin', user);
+
 /**
  * 登录
  */

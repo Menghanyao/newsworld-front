@@ -226,17 +226,7 @@ export default {
     checkRouter() {
       // 根据路由初始化tab选中栏
       
-      // this.user = {
-      //   userId: 120,
-      //   userName: '假医生',
-      //   userType: 3,
-      //   groupId: 120
-      // }
-      // this.isLogin = true
-
-// console.log("checkrouterrrrrrrrrrrrrrrrrrrrrrrrr")
-// console.log(!this.isLogin,this.$route.path != '/',this.$route.path != '/detail')
-      if(!this.isLogin && (this.$route.path != '/' && this.$route.path != '/detail')) {
+      if(!this.isLogin && (this.$route.path != '/' && this.$route.path != '/detail' && this.$route.path != '/addAdmin')) {
         //  未登录，只能看首页和新闻详情页
         this.$message.error("访问这个页面需要登录，请先登录")
         this.$router.push('/')

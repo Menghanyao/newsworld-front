@@ -8,6 +8,8 @@ import Detail from '../components/Detail.vue'
 import MyNews from '../components/MyNews.vue'
 import Department from '../components/Department.vue'
 import Notice from '../components/Notice.vue'
+import Admin from '../components/Admin.vue'
+
 
 Vue.use(VueRouter)
 
@@ -51,6 +53,11 @@ Vue.use(VueRouter)
     path: '/notice',
     name: 'Notice',
     component: Notice
+  },
+  {
+    path: '/addAdmin',
+    name: 'Admin',
+    component: Admin
   },
   {
     path: '/about',
